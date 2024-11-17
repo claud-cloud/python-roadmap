@@ -1,0 +1,54 @@
+# Basic Syntax
+
+`Python` es:
+
+- Un lenguaje interpretado (el código no se compila, sino que se lee línea por línea)
+- Es de Alto nivel (Es cercano al lenguaje natural humano)
+- Es multiplataforma (Podemos crear aplicaciones para web, mobile, IoT, etc.)
+- Es de tipado dinámico
+- Es multiparadigma (Orientado a objetos, imperativo y funcional)
+
+Las reglas de estilo (sintaxis más entendible) para `Python`, están definidas de acuerdo a la **Python Enhancement Proposal N°8** o **PEP8**.
+
+Por ejemplo, la nomenclatura para el nombre de carpetas es utilizar un guion bajo para separar las palabras: `python_work`
+
+El lenguaje Python está formado por `tokens` de diferentes tipos
+
+- Palabras reservadas
+- Funciones integradas
+- Literales
+- Operadores
+- Delimitadores
+- Identificadores
+- etc.
+
+Otra cosa que podemos hacer es imprimir valores en nuestra consola de comandos utilizando `print`, función incluida en `Python`:
+
+```python
+print("Con print podemos imprimir valores en consola")
+```
+
+Entre los detalles que debemos tener en cuenta al principio son:
+
+- `Python` no utiliza puntos y comas `;` a la hora de terminar una declaración, por lo que solo hacemos salto de línea.
+- `Python` no utiliza llaves `{}` para definir bloques de código, por lo que la indentación es importante en nuestros `scripts`.
+
+## Ejecutar código Python
+
+En la terminal usar: `python filename.py`
+
+## Comments
+
+En `Python` podemos agregar comentarios de una sola línea utilizando el símbolo: `#`
+
+```python
+print("Hola") # Esto es un comentario de una sola línea
+```
+
+También podemos agregar comentarios que ocupen múltiples líneas utilizando: `"""`
+
+```python
+"""
+  Este es un comentario de multiples líneas
+"""
+```

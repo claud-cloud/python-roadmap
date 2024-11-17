@@ -1,0 +1,84 @@
+# Numbers
+
+Los números se utilizan muy a menudo en programación para llevar la puntuación en los juegos, representar datos en visualizaciones, almacenar información en aplicaciones web, etc.
+
+`Python` trata los números de varias maneras diferentes, dependiendo de cómo se estén utilizando.
+
+## Integers
+
+En `Python` se pueden usar diferentes operadores aritméticos para realizar operaciones con números enteros.
+
+```shell
+>>> 2 + 3
+5
+>>> 3 - 2
+1
+>>> 2 * 3
+6
+>>> 3 / 2
+1.5
+```
+
+`Python` también admite el orden de las operaciones, por lo que podemos utilizar múltiples operaciones en una expresión. También podemos usar paréntesis para modificar el orden en que `Python` evalúa las expresiones.
+
+```shell
+>>> 2 + 3 * 4
+14
+>>> (2 + 3) * 4
+20
+```
+
+## Floats
+
+`Python` llama `float` a cualquier numero con punto decimal. Hace referencia que el punto decimal puede aparecer en cualquier posición de un numero.
+
+```shell
+>>> 0.1 + 0.1
+0.2
+>>> 0.2 + 0.2
+0.4
+>>> 2 * 0.1
+0.2
+>>> 2 * 0.2
+0.4
+```
+
+Algunas veces las operaciones con flotantes pueden resultar en un numero arbitrario de decimales. Como por ejemplo:
+
+```shell
+>>> 0.2 + 0.1
+0.30000000000000004
+```
+
+`Python` intenta encontrar una manera de representar el resultado con la mayor precisión posible y tiene sus propias maneras de solventar esto\*.
+
+## Integers and Floats
+
+Cuando dividimos dos números cualesquiera, aunque sean enteros que den como resultado un número entero, siempre obtendrás un flotante:
+
+```shell
+>>> 4 / 2
+2.0
+```
+
+Lo mismo pasa si mezclamos un flotante y un entero. Nos devuelve un flotante:
+
+```shell
+>>> 1 + 2.0
+3.0
+>>> 2 * 3.0
+6.0
+```
+
+## Underscores in Numbers
+
+Cuando escribimos números largos, podemos agrupar los dígitos utilizando guiones bajos para que los números grandes sean mas legibles.
+
+```python
+universe_age = 14_000_000_000
+print(universe_age) # 14000000000
+```
+
+`Python` ignora los guiones bajos cuando almacena este tipo de valores. Incluso si no agrupas los dígitos de tres en tres, el valor no se verá afectado.
+
+Para `Python`, 1000 es lo mismo que 1_000, que es lo mismo que 10_00. Esta característica funciona tanto para enteros como para flotantes.
